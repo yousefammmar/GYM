@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PPL + Upper/Lower Final Structure</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Workout home">
+      <span class="brand-mark">PPL</span>
+      <span>Upper/Lower</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#structure">Structure</a>
+      <a href="#workouts">Workouts</a>
+      <a href="#tracker">Tracker</a>
+      <a href="#notes">Notes</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">final rebuilt structure</p>
+        <h1>Push / Pull / Legs + Upper / Lower</h1>
+        <p>
+          Your updated workout plan is now rebuilt as a cleaner 5-day structure with core work included as finishers,
+          not as a separate day. Track sets, write notes, and follow the weekly flow.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#workouts">Start Workout</a>
+          <a class="btn ghost" href="https://docs.google.com/spreadsheets/d/1RQcwdyvkes_KvgGQYvOj1Pf5LTyPjJB7SNe7TEFIVUU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Open Sheet</a>
+        </div>
+      </div>
+
+      <aside class="summary-panel" aria-label="Plan summary">
+        <div>
+          <span id="totalExercises">0</span>
+          <small>Total exercises</small>
+        </div>
+        <div>
+          <span id="trainingDays">5</span>
+          <small>Training days</small>
+        </div>
+        <div>
+          <span id="completedExercises">0</span>
+          <small>Completed this week</small>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" id="structure">
+      <div class="section-head">
+        <p class="eyebrow">weekly flow</p>
+        <h2>Program Structure</h2>
+        <p class="muted">Five lifting days, two recovery days, and core movements placed inside Leg/Lower/Upper as finishers.</p>
+      </div>
+      <div class="week-grid" id="weekGrid"></div>
+    </section>
+
+    <section class="section tracker-section" id="tracker">
+      <div>
+        <p class="eyebrow">weekly progress</p>
+        <h2>Tracker</h2>
+        <p class="muted">Tick off each exercise after you finish it. Your progress and notes save in this browser.</p>
+      </div>
+      <div class="tracker-card">
+        <div class="tracker-top">
+          <strong id="progressText">0%</strong>
+          <span id="progressCount">0 of 0 completed</span>
+        </div>
+        <div class="progress-track"><span id="progressBar"></span></div>
+        <button class="btn small" id="resetProgress">Reset Week</button>
+      </div>
+    </section>
+
+    <section class="section" id="workouts">
+      <div class="section-head">
+        <p class="eyebrow">day-by-day</p>
+        <h2>Workout Plan</h2>
+      </div>
+      <div class="filters" id="filters"></div>
+      <div class="workout-layout" id="workoutLayout"></div>
+    </section>
+
+    <section class="section" id="notes">
+      <div class="section-head">
+        <p class="eyebrow">training notes</p>
+        <h2>Run the plan properly</h2>
+      </div>
+      <div class="notes-grid">
+        <article>
+          <h3>Progression</h3>
+          <p>Add weight only when you hit the top of the rep range with clean form on all sets.</p>
+        </article>
+        <article>
+          <h3>Core finishers</h3>
+          <p>For planks, hanging raises, twists, and back extensions, stop when your form breaks.</p>
+        </article>
+        <article>
+          <h3>Recovery</h3>
+          <p>Keep the two rest days. Use them for walking, stretching, and getting enough sleep.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Final rebuilt website based on the updated PPL + Upper/Lower sheet.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
